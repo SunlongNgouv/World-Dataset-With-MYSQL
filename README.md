@@ -33,23 +33,23 @@ create view v_continent_rank as
 select * from v_continent_rank where lifeexpectancy is not null and life_con_rank =1 order by lifeexpectancy desc;
 ###### Finding:
 The top life expectancy per continent: 
-	1. Andorra(Europe), 
-    	2. Macao(Asia), 
-    	3. Australia(Oceania), 
-    	4. Canada(North America), 
-    	5. Saint Helena(Africa), 
-    	6. and French Guiana(South America). 
+	1. Andorra(Europe)
+    	2. Macao(Asia)
+    	3. Australia(Oceania)
+    	4. Canada(North America)
+    	5. Saint Helena(Africa)
+    	6. and French Guiana(South America)
 
 #### 4. find top GNP countries by continents, ranking by world's GNP
 select * from v_continent_rank where gnp >0 and gnp_con_rank =1 order by gnp desc;
 ###### 	Finding:
 The top GNP countries per continent: 
-	1. USA(North America), 
-    	2. Japan(Asia), 
-    	3. Germany(Europe), 
-    	4. Brazil(South America), 
-    	5. Australia(Oceania), 
-    	6. and South Africa(Africa).
+	1. USA(North America)
+    	2. Japan(Asia)
+    	3. Germany(Europe)
+    	4. Brazil(South America)
+    	5. Australia(Oceania)
+    	6. and South Africa(Africa)
 *What's special, Austalia has both high life expectancy and GNP.* 
 
 #### 5. find top life expectancy countries limited by life expectancy over 80
@@ -84,11 +84,11 @@ where lifeexpectancy is not null and gnp >0
 order by continent, lifeexpectancy;
 ###### 	Finding:
 Lowest life expectancy country by continents: 
-	1. Afghanistan(Asia)=45.9, 
-	2. Moldova(Europe)=64.5, 
-    	3. Haiti(North American)=49.2, 
-    	4. Zambia(Africa)=37.2, 
-    	5. Kiribati(Oceania)=59.8, 
+	1. Afghanistan(Asia)=45.9
+	2. Moldova(Europe)=64.5
+    	3. Haiti(North American)=49.2 
+    	4. Zambia(Africa)=37.2
+    	5. Kiribati(Oceania)=59.8
     	6. Brazil(South America)=62.9
 
 
